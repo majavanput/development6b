@@ -1,0 +1,27 @@
+<project>
+	<description>
+		Maja van Put (0843807)
+		INF2D
+		Development 6b
+		Assignment 2
+	</description>
+	
+	<tstamp>
+		<format property="TIME_NL" pattern="dd-MM-yyyy HH:mm" locale="en, NL"/>
+	</tstamp>
+	<echo>Current time is ${TIME_NL}</echo>
+
+		<mail
+			tolist="majavanput@gmail.com"
+			from="noreply@gmail.com"
+			subject="Jenkins Build"
+			mailhost="smtp.gmail.com"
+			mailport="587"
+			user="majavanput@gmail.com"
+			password="Jhunic1964"
+			enableStartTLS="true"
+			messagemimetype="text/plain" >
+		<message>Development6b - Another build! ${BUILD_NUMBER}</message>
+		</mail>
+	
+</project>
